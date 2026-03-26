@@ -1,0 +1,108 @@
+:root {
+    /* Color variables */
+    --primary-color: #0F172A;
+    --secondary-color: #1E293B;
+    --text-color: #E2E8F0;
+    --accent-color: #64fdf5;
+    /* spacing variables */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    /* border radius variables */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    /* font size variables */
+    --text-size-sm: 1rem;
+    --text-size-md: 1.2rem;
+    --text-size-lg: 1.5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content_section {
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+}
+
+li {
+    transition: 0.5s ease-in;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: var(--text-size-md);
+    transition: 0.5s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    color: var(--text-color);
+    padding: var(--space-lg);
+    margin: auto;
+}
+
+.logo__first_name {
+    font-size: var(--text-size-md);
+    font-family: "Momo Signature", cursive;
+}
+
+.logo__first_name::first-letter {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: var(--text-size-lg);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(2 * var(--space-lg))
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--space-lg);
+    font-size: var(--text-size-md);
+}
+
+.nav-list a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color), 0 0 50px var(--accent-color);
+    transform: scale(1.2);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.header__btn {
+    background-color: var(--accent-color);
+    border-radius: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    color: var(--primary-color);
+}
+
+.header__btn:hover {
+    transform: scale(1.1);
+}
