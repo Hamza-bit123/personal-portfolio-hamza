@@ -66,6 +66,10 @@ button {
 
 }
 
+button:hover {
+    animation: dance 5s infinite ease-in-out;
+}
+
 i {
     font-size: 20px;
     color: var(--text-color);
@@ -246,7 +250,7 @@ i:hover {
     color: var(--accent-color);
     display: inline-block;
     box-shadow: 0px 0px 10px var(--accent-color);
-    animation: arrow-dance 2s infinite ease-in-out;
+    animation: dance 2s infinite ease-in-out;
 }
 
 .go_to_abut_me {
@@ -254,7 +258,7 @@ i:hover {
     bottom: var(--space-lg);
 }
 
-@keyframes arrow-dance {
+@keyframes dance {
 
     0%,
     100% {
@@ -282,9 +286,10 @@ i:hover {
 
 .section__title {
     text-align: center;
-    font-size: var(--text-size-xxl);
+    font-size: var(--text-size-xl);
     color: var(--accent-color);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    margin-top: var(--space-xxl);
 }
 
 .about__description {
@@ -340,15 +345,20 @@ i:hover {
 }
 
 .card {
-    padding: var(--space-md);
-    border-radius: var(--space-md);
-}
-
-.project--card {
-    box-shadow: inset 0px 0px 10px var(--accent-color);
     display: flex;
     flex-direction: column;
+    padding: var(--space-md);
+    border-radius: var(--space-md);
     gap: var(--space-sm);
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px var(--accent-color);
+    animation: dance 5s infinite ease-in-out;
+
 }
 
 .card__image {
@@ -384,6 +394,7 @@ i:hover {
     justify-content: flex-start;
     align-items: center;
     margin-top: var(--space-md);
+    width: 100%;
 }
 
 .card__title {
@@ -392,18 +403,56 @@ i:hover {
 
 .card--description {
     font-size: 0.9rem;
+    display: none;
 }
 
 .open_project {
     display: flex;
     gap: var(--space-sm);
+    justify-content: space-between;
+    width: 100%;
 }
 
-.open_project i {
-    color: var(--accent-color);
+.open_project i:hover {
+    box-shadow: none !important;
+}
+
+.project--btn {
+    width: 50%;
+    background-color: var(--primary-color);
+    font-size: var(--text-size-sm);
+}
+
+.project--btn i {
+    color: var(--text-color);
 }
 
 .open_project i:hover {
     color: var(--text-color);
     box-shadow: 0px 0px 10px var(--accent-color);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-md);
+}
+
+.contacts i:hover {
+    box-shadow: none;
+}
+
+.bi-arrow-up-right {
+    padding: 0;
+    size: 3px;
+}
+
+.footer--description {
+    margin-top: var(--space-md);
 }

@@ -16,6 +16,8 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
             rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
         <link rel="stylesheet" href="./style/style.css">
     </head>
 
@@ -26,18 +28,18 @@
             </div>
             <nav class="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#hero--section">Home</a></li>
+                    <li><a href="#about--section">About</a></li>
+                    <li><a href="#project--section">Projects</a></li>
+                    <li><a href="#skill--section">Skills</a></li>
                 </ul>
-                <button class="btn header__btn" type="button">
+                <button class="btn header__btn" type="button" id="contact_btn">
                     Contact
                 </button>
             </nav>
         </header>
         <main class="content_section">
-            <section class="section hero--section">
+            <section class="section hero--section" id="hero--section">
                 <div class="hero__image">
                     <img src="./assets/pp image placeholder.jpg"
                         alt="Profile Picture" width="300px">
@@ -63,8 +65,8 @@
                                 class="bi bi-github"></i></a>
                         <a href="mailto:hamuzehassen@gmail.com"><i
                                 class="bi bi-envelope"></i></a>
-                        <a href="http://"><i class="bi bi-linkedin"></i></a>
-                        <a href="http://"><i class="bi bi-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/hamza-hassen-b64626365"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://t.me/hamzahassen12"><i class="bi bi-telegram"></i></a>
                     </div>
                 </div>
                 <a href="#about--section" class="go_to_abut_me"><i
@@ -106,7 +108,7 @@
 
                 </div>
             </section>
-            <section class="section project--section">
+            <section class="section project--section" id="project--section">
                 <h3 class="section__title project--title">Latest Projects</h3>
                 <div class="projects">
                     <div class="card project--card">
@@ -130,7 +132,8 @@
                             while tenants can browse listings and choose
                             suitable options based on their needs.</p>
                         <div class="open_project">
-                            <a href="https://github.com/Hamza-bit123/House-rental-system"><i class="bi bi-github"></i></a> 
+                            <button type="button" class="project--btn">View Project <i class="bi bi-box-arrow-up-right"></i></button>
+                            <button type="button" class="project--btn"><i class="bi bi-github"></i> Source</button>
                         </div>
                     </div>
                     <div class="card project--card">
@@ -145,14 +148,19 @@
                         </div>
                         <div class="card__title_bar">
                             <i class="bi bi-hand-index-thumb card__icon"></i>
-                            <h4 class="card__title">Election Management System</h4>
+                            <h4 class="card__title">Election Management
+                                System</h4>
                         </div>
-                        <p class="description card--description">A full-stack web application developed to digitize 
-                            and streamline the election process. The system allows administrators and coordinators to 
-                            efficiently register voters, manage election data, and maintain organized records in a 
+                        <p class="description card--description">A full-stack
+                            web application developed to digitize
+                            and streamline the election process. The system
+                            allows administrators and coordinators to
+                            efficiently register voters, manage election data,
+                            and maintain organized records in a
                             secure environment.</p>
                         <div class="open_project">
-                            <a href="https://github.com/Hamza-bit123/election-system"><i class="bi bi-github"></i></a> 
+                            <button type="button" class="project--btn">View Project <i class="bi bi-box-arrow-up-right"></i></button>
+                            <button type="button" class="project--btn"><i class="bi bi-github"></i> Source</button>
                         </div>
                     </div>
                     <div class="card project--card">
@@ -167,15 +175,92 @@
                             <i class="bi bi-postcard card__icon"></i>
                             <h4 class="card__title">RESTful Blog API</h4>
                         </div>
-                        <p class="description card--description">A backend RESTful API developed to manage posts with full CRUD functionality. 
-                            The system includes secure authentication and supports image uploads, allowing users to create, update, and manage 
+                        <p class="description card--description">A backend
+                            RESTful API developed to manage posts with full CRUD
+                            functionality.
+                            The system includes secure authentication and
+                            supports image uploads, allowing users to create,
+                            update, and manage
                             content efficiently.</p>
                         <div class="open_project">
-                            <a href="https://github.com/Hamza-bit123/mini-blog-api"><i class="bi bi-github"></i></a> 
+                            <button type="button" class="project--btn">View Project <i class="bi bi-box-arrow-up-right"></i></button>
+                            <button type="button" class="project--btn"><i class="bi bi-github"></i> Source</button>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="section skill--section" id="skill--section">
+                <h3 class="section__title skill--title">Skills</h3>
+                <div class="skills">
+                    <div class="card skill--card">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span class="description">HTML</span>
+                    </div>
+                    <div class="card skill--card">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span class="description">CSS</span>
+                    </div>
+                    <div class="card skill--card">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span class="description">JavaScript</span>
+                    </div>
+                    <div class="card skill--card">
+                        <i class="devicon-react-original colored"></i>
+                        <span class="description">React</span>
+                    </div>
+                    <div class="card skill--card">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span class="description">Node.js</span>
+                    </div>
+                    <div class="card skill--card">
+                        <i class="devicon-express-original accent_text"></i>
+                        <span class="description">Express.js</span>
+                    </div>
+                    <div class="card skill--card">
+                        <i class="devicon-mysql-plain accent_text"></i>
+                        <span class="description">SQL (MySQL)</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section contact--section" id="contact--section">
+                <h3 class="section__title contact--title">Contact Me</h3>
+                <div class="contacts">
+                    <div class="contact_information card">
+                        <h4 class="card__title">Contact Information</h4>
+                        <div class="card__title_bar">
+                            <i class="bi bi-phone"></i>
+                            <span>Phone: +251 654 17537</span>
+                        </div>
+                        <div class="card__title_bar">
+                            <i class="bi bi-envelope"></i>
+                            <span>Email: hamuzehassen@gmail.com <i class="bi bi-arrow-up-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="online_links card">
+                        <h4 class="card__title">Find Me Online</h4>
+                        <div class="card__title_bar">
+                            <i class="bi bi-github"></i>
+                            <span>GitHub: Hamza-bit123</span>
+                        </div>
+                        <div class="card__title_bar">
+                            <i class="bi bi-linkedin"></i>
+                            <span>LinkedIn: hamza-hassen</span>
+                        </div>
+                        <div class="card__title_bar">
+                            <i class="bi bi-telegram"></i>
+                            <span>Telegram: @hamzahassen12</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer section">
+                <hr>
+                <div class="footer--description">
+                    <i class="bi bi-c-circle"></i>
+                    2026 Hamza Hassen. All rights reserved.
+                    Built with passion and modern web technologies.
+                </div>
+            </footer>
         </main>
     </body>
 
