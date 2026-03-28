@@ -26,17 +26,23 @@
             <div class="logo header--logo">
                 <p class="logo__first_name">Hamza</p>
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu hidden" id="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#hero--section">Home</a></li>
                     <li><a href="#about--section">About</a></li>
                     <li><a href="#project--section">Projects</a></li>
                     <li><a href="#skill--section">Skills</a></li>
                 </ul>
-                <button class="btn header__btn" type="button" id="contact_btn">
+                <button class="btn header__btn contact_btn" type="button" id="contact_btn">
                     Contact
                 </button>
+                <div class="close_menu" id="close_menu">
+                    <i class="bi bi-x-lg"></i>
+                </div>
             </nav>
+            <div class="menu_icon" id="menu_icon">
+                <i class="bi bi-list"></i>
+            </div>
         </header>
         <main class="content_section">
             <section class="section hero--section" id="hero--section">
@@ -55,7 +61,7 @@
                         and Node.js, focusing on creating efficient and
                         user-friendly digital experiences.</p>
                     <div class="hero__buttons">
-                        <button type="button" class="contact_btn">Contact
+                        <button type="button" class="contact_btn" id="contact_btn" >Contact
                             Me</button>
                         <button type="button" class="project_btn">View My
                             Work</button>
@@ -224,6 +230,8 @@
             </section>
             <section class="section contact--section" id="contact--section">
                 <h3 class="section__title contact--title">Contact Me</h3>
+                <p class="description contact--description">Feel free to reach out if you’re looking for a developer, have a question, 
+                    or just want to connect. I’m always open to new opportunities and collaborations.</p>
                 <div class="contacts">
                     <div class="contact_information card">
                         <h4 class="card__title">Contact Information</h4>
@@ -233,7 +241,7 @@
                         </div>
                         <div class="card__title_bar">
                             <i class="bi bi-envelope"></i>
-                            <span>Email: hamuzehassen@gmail.com <i class="bi bi-arrow-up-right"></i></span>
+                            <span>Email: hamuzehassen@gmail.com</span>
                         </div>
                     </div>
                     <div class="online_links card">
@@ -262,6 +270,26 @@
                 </div>
             </footer>
         </main>
+
+        <script>
+            const menu_icon = document.getElementById("menu_icon");
+            const close_menu = document.getElementById("close_menu");
+            const nav = document.getElementById("nav-menu");
+            const contact_section = document.getElementById("contact--section")
+            const contact_btn = document.querySelector(".contact_btn")
+
+            const toggleMenu = ()=>{
+                nav.classList.toggle("hidden")
+            }
+
+            menu_icon.addEventListener("click", toggleMenu)
+            nav.addEventListener("click", toggleMenu)
+
+            contact_btn.addEventListener("click", function(){
+                if(contact_section) contact_section.scrollIntoView({behavior: "smooth"})
+            })
+            
+        </script>
     </body>
 
 </html>

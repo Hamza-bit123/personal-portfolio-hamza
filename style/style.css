@@ -160,7 +160,8 @@ i:hover {
     flex-direction: row-reverse;
     justify-content: center;
     gap: var(--space-xxl);
-    height: 90vh;
+    min-height: 90vh;
+    position: relative;
 }
 
 .hero__image {
@@ -281,7 +282,7 @@ i:hover {
 .about--section {
     width: 80%;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section__title {
@@ -455,4 +456,103 @@ i:hover {
 
 .footer--description {
     margin-top: var(--space-md);
+}
+
+.contact--description {
+    font-size: var(--text-size-sm);
+    margin-bottom: var(--space-md);
+    letter-spacing: normal;
+}
+
+.close_menu {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    z-index: 9;
+}
+
+.close_menu i,
+.menu_icon i {
+    color: var(--accent-color);
+}
+
+.menu_icon {
+    display: none;
+}
+
+/*  media query */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .nav-menu::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        z-index: 8;
+    }
+
+    .header__btn {
+        z-index: 9;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 70%;
+        z-index: 9;
+    }
+
+    .menu_icon {
+        display: block;
+        z-index: inherit;
+    }
+
+    .hero--section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .go_to_abut_me {
+        bottom: var(--space-sm);
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 14px;
+    }
+
+    .about--section {
+        width: 100%;
+    }
+
+    .contacts {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .skills {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
 }
