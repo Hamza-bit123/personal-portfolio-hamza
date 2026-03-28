@@ -139,13 +139,13 @@
                             suitable options based on their needs.</p>
                         <div class="open_project">
                             <button type="button" class="project--btn">View Project <i class="bi bi-box-arrow-up-right"></i></button>
-                            <button type="button" class="project--btn"><i class="bi bi-github"></i> Source</button>
+                            <button type="button" class="project--btn" id="House-rental-system"><i class="bi bi-github"></i> Source</button>
                         </div>
                     </div>
                     <div class="card project--card">
                         <div class="card__image"><img
-                                src="./assets/projects/election sytem.PNG"
-                                alt="House Rental System"></div>
+                                src="./assets/projects/election system.jpg"
+                                alt="election system"></div>
                         <div class="tech_stack">
                             <span class="technology">React</span>
                             <span class="technology">CSS</span>
@@ -166,7 +166,7 @@
                             secure environment.</p>
                         <div class="open_project">
                             <button type="button" class="project--btn">View Project <i class="bi bi-box-arrow-up-right"></i></button>
-                            <button type="button" class="project--btn"><i class="bi bi-github"></i> Source</button>
+                            <button type="button" class="project--btn" id="election-system"><i class="bi bi-github"></i> Source</button>
                         </div>
                     </div>
                     <div class="card project--card">
@@ -190,7 +190,7 @@
                             content efficiently.</p>
                         <div class="open_project">
                             <button type="button" class="project--btn">View Project <i class="bi bi-box-arrow-up-right"></i></button>
-                            <button type="button" class="project--btn"><i class="bi bi-github"></i> Source</button>
+                            <button type="button" class="project--btn" id="mini-blog-api"><i class="bi bi-github"></i> Source</button>
                         </div>
                     </div>
                 </div>
@@ -237,26 +237,26 @@
                         <h4 class="card__title">Contact Information</h4>
                         <div class="card__title_bar">
                             <i class="bi bi-phone"></i>
-                            <span>Phone: +251 654 17537</span>
+                            <a href="tel:+251 654 17537">Phone: +251 654 17537</a>
                         </div>
                         <div class="card__title_bar">
                             <i class="bi bi-envelope"></i>
-                            <span>Email: hamuzehassen@gmail.com</span>
+                            <a href="mailto:hamuzehassen@gmail.com">Email: hamuzehassen@gmail.com</a>
                         </div>
                     </div>
                     <div class="online_links card">
                         <h4 class="card__title">Find Me Online</h4>
                         <div class="card__title_bar">
                             <i class="bi bi-github"></i>
-                            <span>GitHub: Hamza-bit123</span>
+                            <a href="https://github.com/Hamza-bit123">GitHub: Hamza-bit123</a>
                         </div>
                         <div class="card__title_bar">
                             <i class="bi bi-linkedin"></i>
-                            <span>LinkedIn: hamza-hassen</span>
+                            <a href="https://www.linkedin.com/in/hamza-hassen-b64626365">LinkedIn: hamza-hassen</a>
                         </div>
                         <div class="card__title_bar">
                             <i class="bi bi-telegram"></i>
-                            <span>Telegram: @hamzahassen12</span>
+                            <a href="https://t.me/hamzahassen12">Telegram: @hamzahassen12</a>
                         </div>
                     </div>
                 </div>
@@ -271,27 +271,7 @@
             </footer>
         </main>
 
-        <script>
-            const menu_icon = document.getElementById("menu_icon");
-            const close_menu = document.getElementById("close_menu");
-            const nav = document.getElementById("nav-menu");
-            const contact_section = document.getElementById("contact--section")
-            const contact_btn = document.querySelectorAll(".contact_btn")
-
-            const toggleMenu = ()=>{
-                nav.classList.toggle("hidden")
-            }
-
-            menu_icon.addEventListener("click", toggleMenu)
-            nav.addEventListener("click", toggleMenu)
-
-           contact_btn.forEach(el => {
-                el.addEventListener("click", function(){
-                    contact_section.scrollIntoView({behavior: "smooth"})
-                })
-            });
-            
-        </script>
+        <script src="./script/script.js"></script>
     </body>
 
 </html>
