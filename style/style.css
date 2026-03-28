@@ -219,7 +219,7 @@ i:hover {
     gap: var(--space-lg);
 }
 
-.contact_btn {
+.hero--contact_btn {
     background-color: var(--accent-color);
     color: var(--primary-color);
 }
@@ -469,6 +469,7 @@ i:hover {
     top: var(--space-md);
     right: var(--space-md);
     z-index: 9;
+    display: none;
 }
 
 .close_menu i,
@@ -522,6 +523,10 @@ i:hover {
         flex-direction: column;
         width: 70%;
         z-index: 9;
+    }
+
+    .close_menu {
+        display: block;
     }
 
     .menu_icon {
